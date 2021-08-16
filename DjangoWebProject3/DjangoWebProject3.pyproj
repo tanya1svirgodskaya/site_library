@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>DjangoWebProject3</Name>
+    <RootNamespace>DjangoWebProject3</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>af17d98e-bb05-42c2-ac21-81c8e101decc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>DjangoWebProject3.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="TNBooks\forms.py" />
+    <Compile Include="TNBooks\migrations\0001_initial.py" />
+    <Compile Include="TNBooks\models.py" />
+    <Compile Include="TNBooks\tests.py" />
+    <Compile Include="TNBooks\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TNBooks\views.py" />
+    <Compile Include="TNBooks\__init__.py" />
+    <Compile Include="TNBooks\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="DjangoWebProject3\__init__.py" />
+    <Compile Include="DjangoWebProject3\settings.py" />
+    <Compile Include="DjangoWebProject3\urls.py" />
+    <Compile Include="DjangoWebProject3\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TNBooks\" />
+    <Folder Include="TNBooks\migrations\" />
+    <Folder Include="TNBooks\static\" />
+    <Folder Include="TNBooks\static\app\" />
+    <Folder Include="TNBooks\static\app\content\" />
+    <Folder Include="TNBooks\static\app\content\img\" />
+    <Folder Include="TNBooks\static\app\fonts\" />
+    <Folder Include="TNBooks\static\app\scripts\" />
+    <Folder Include="TNBooks\templates\" />
+    <Folder Include="TNBooks\templates\app\" />
+    <Folder Include="DjangoWebProject3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="TNBooks\static\app\content\img\about1.jpg" />
+    <Content Include="TNBooks\static\app\content\img\about1.png" />
+    <Content Include="TNBooks\static\app\content\img\about2.jpg" />
+    <Content Include="TNBooks\static\app\content\img\about2.png" />
+    <Content Include="TNBooks\static\app\content\img\about3.jpg" />
+    <Content Include="TNBooks\static\app\content\img\about3.png" />
+    <Content Include="TNBooks\static\app\content\img\about4.jpg" />
+    <Content Include="TNBooks\static\app\content\img\about4.png" />
+    <Content Include="TNBooks\static\app\content\img\first-bg.jpg" />
+    <Content Include="TNBooks\static\app\content\img\icon.ico" />
+    <Content Include="TNBooks\static\app\content\img\icon.png" />
+    <Content Include="TNBooks\static\app\content\img\icon1.png" />
+    <Content Include="TNBooks\static\app\content\img\icon2.png" />
+    <Content Include="TNBooks\static\app\content\img\icon3.png" />
+    <Content Include="TNBooks\static\app\content\img\logo.png" />
+    <Content Include="TNBooks\static\app\content\main2.css" />
+    <Content Include="TNBooks\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="TNBooks\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="TNBooks\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="TNBooks\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="TNBooks\static\app\scripts\bootstrap.js" />
+    <Content Include="TNBooks\static\app\scripts\bootstrap.min.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="TNBooks\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery.validate.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="TNBooks\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="TNBooks\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="TNBooks\static\app\scripts\respond.js" />
+    <Content Include="TNBooks\static\app\scripts\respond.min.js" />
+    <Content Include="TNBooks\static\app\scripts\_references.js" />
+    <Content Include="TNBooks\templates\app\formgenre.html" />
+    <Content Include="TNBooks\templates\app\Book.html" />
+    <Content Include="TNBooks\templates\app\formpubl.html" />
+    <Content Include="TNBooks\templates\app\form.html" />
+    <Content Include="TNBooks\templates\app\index2.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

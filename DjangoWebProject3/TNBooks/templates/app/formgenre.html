@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="id=edge">
+  <link rel="stylesheet"  href="/css/style2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Form</title>
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h1 class="my-0 mr-md-auto font-weight-normal">Библиотека</h1>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="#">Книги</a></nav>
+   </div>
+   
+   <div class="container">
+   <div class="form " align="center">
+       <h2 align="center " >Введите информацию о жанре</h2>
+      <form action="/TNBooks/genre/" method="post">
+    <input type="message" name="name" placeholder="Название жанра" class="form-control"><br>
+  
+    <button type="submit" name="button" class="btn btn-success ">Принять</button>
+         </form>
+    {% if genres %}
+        <h1>Жанры</h1>
+        <style>
+   table {
+    border: 4px double #333; /* Рамка вокруг таблицы */ 
+    border-collapse: separate; /* Способ отображения границы */ 
+    width: 100%; /* Ширина таблицы */ 
+    border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+   }
+   td {
+    padding: 5px; /* Поля вокруг текста */ 
+    border: 1px solid #a52a2a; /* Граница вокруг ячеек */ 
+   }
+  </style>
+       <table align="center">
+  <tr>
+    <th>Идентификатор</th>
+   <th>Название</th>
+   
+  
+  </tr>
+        {% for genre in genres %}
+        <div>
+            <tr>
+    <td>{{genre.id}}</td>
+    <td>{{genre.name}}</td>
+    
+  </tr>
+            
+        {% endfor %}
+       {% endif %}
+
+
+   </div>
+    </div>
+           
+   
+  
+  
+</div>
+</body>
+</html>
+
+
+
+
